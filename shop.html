@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang=“en”>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Buzzfeed Unsolved</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <link href="https://fonts.googleapis.com/css2?family=Solway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/main.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <div id="content-wraper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="index.html"> 
+                <img src="static/images/BU-logo.png" class="logo-img"/>
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="showformat.html">SHOW FORMAT</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="shop.html">SHOP</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SEASONS
+                        </a>
+                        <div class="dropdown-menu seasons-dropdown" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="season1.html">Season 1</a>
+                          <a href="#" class="dropdown-item disabled">Season 2</a>
+                          <a href="#" class="dropdown-item disabled">Season 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+        <main>
+            <h1 class="all-text alligned">Welcome to the Buzzfeed Unsolved Official Page! </h1>
+            <div class="wrapper">
+                <h5> If you want to support these guys, you can find their merch <a href="https://shop.buzzfeed.com/collections/buzzfeed-unsolved" target= "_blank">here</a>. </h5>
+                <p> The items you can choose from are:</p>
+                <ul class="list">
+                    <li><solid>Mugs</solid></li>
+                    <li>T-shirts</li>
+                    <li>Sweatshirts</li>
+                    <li>Stickers</li>
+                    <li>Tank tops</li>
+                    <li>Keychaines</li>
+                </ul>
+            </div>
+            <div class="slideshow-container">
+
+                <div class="mySlides fading-slide">
+                  <img src="https://cdn.shopify.com/s/files/1/0082/0733/5475/products/mockup-1f363f3f_1024x1024@2x.png?v=1574441978" style="width:100%" alt="T-shirt">
+                </div>
+                
+                <div class="mySlides fading-slide">
+                  <img src="https://cdn.shopify.com/s/files/1/0082/0733/5475/products/mockup-568dd9fd_1024x1024@2x.png?v=1570637751" style="width:100%" alt="Coffee mug">
+                </div>
+                
+                <div class="mySlides fading-slide">
+                  <img src="https://cdn.shopify.com/s/files/1/0082/0733/5475/products/mockup-949f5482_1024x1024@2x.png?v=1574186028" style="width:100%" alt="Hoodie">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#x21A4;</a>
+                <a class="next" onclick="plusSlides(1)">&#x21A6;</a>
+                
+            </div>
+                <br>
+                
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div> 
+        </main>
+    </div>
+    <footer class="footer mt-auto">
+        <div class="socialmedia"> 
+            <a href="https://www.facebook.com/buzzfeedunsolved" class="fa fa-facebook" target="_blank" ></a>
+            <a href="https://www.youtube.com/channel/UCKijjvu6bN1c-ZHVwR7-5WA" class="fa fa-youtube" target="_blank" > </a>
+            <a href="https://www.instagram.com/buzzfeedunsolved/" class="fa fa-instagram" target="_blank" ></a>
+        </div>
+        <div>&copy; Copyright <span id="current-year"></span></div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="static/js/main.js"></script>
+
+
+</body>
+</html> 
+
