@@ -1,11 +1,9 @@
 body {
   font-family: "Solway", serif;
   color: black;
-  margin: 0 20px;
-  /* background-image:linear-gradient(rgba(250, 250, 250, 0.8), rgba(250, 250, 250, 0.8)), url(https://upload.wikimedia.org/wikipedia/commons/9/9d/BuzzfeedUnsolvedLogo.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; */
+}
+h2 {
+  padding-left: 10px;
 }
 
 .splash {
@@ -17,7 +15,6 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  /* background: #acacac; */
   background: rgb(222, 218, 226);
   background: linear-gradient(
     153deg,
@@ -38,7 +35,7 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  /* background: #acacac; */
+  /* background: #e6e6e6; */
   background: rgb(222, 218, 226);
   background: linear-gradient(
     153deg,
@@ -72,6 +69,7 @@ body {
 .wrapper {
   min-height: 100%;
   margin-bottom: -50px;
+  margin-left: 10px;
 }
 
 .footer,
@@ -180,21 +178,17 @@ p {
 }
 
 .ep-container {
-  width: 80%;
-  left: 10%;
-  margin-right: -10%;
-  display: grid;
+  max-width: 1200px;
+  display: flex;
   position: relative;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 20px;
-  row-gap: 10px;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 40px 0;
 }
 
 .ep-thumbnail {
-  max-width: 100%;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  height: 100%;
 }
 
 .slideshow-container {
@@ -295,7 +289,7 @@ section .text-container {
 section .text-container .text-box {
   margin: 20px;
   padding: 20px;
-  background: #acacac;
+  background: #e6e6e6;
 }
 
 .reveal {
@@ -378,22 +372,23 @@ section .text-container .text-box {
 
 .flip-box {
   background-color: transparent;
-  width: 400px;
-  height: 225px;
-  border: 1px solid #f1f1f1;
+  width: 460px;
+  height: 280px;
   perspective: 1000px;
   border-radius: 5px;
+  margin: 20px;
 }
 
 /* This container is needed to position the front and back side */
 .flip-box-inner {
+  border-radius: 5px;
   position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -414,8 +409,10 @@ section .text-container .text-box {
 
 /* Style the front side (fallback if image is missing) */
 .flip-box-front {
-  background-color: #acacac;
+  background-color: #e6e6e6;
   color: black;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
 /* Style the back side */
@@ -423,9 +420,11 @@ section .text-container .text-box {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #acacac;
+  background-color: #e6e6e6;
   color: black;
   transform: rotateY(180deg);
+  padding: 30px 20px;
+  border-radius: 5px;
 }
 
 .flip-box-front h5 {
@@ -434,4 +433,12 @@ section .text-container .text-box {
   left: 0px;
   background: rgb(255, 255, 255, 0.8);
   padding: 5px 20px;
+}
+
+.youtube-link {
+  color: red;
+}
+
+.youtube-link:hover {
+  color: red;
 }
