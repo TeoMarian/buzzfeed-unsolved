@@ -266,7 +266,6 @@ p {
 }
 
 section {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -337,10 +336,15 @@ section .text-container .text-box {
   }
 }
 
+#github-logo {
+  width: 20px;
+  height: 20px;
+}
 .footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -441,4 +445,12 @@ section .text-container .text-box {
 
 .youtube-link:hover {
   color: red;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  width: 100%;
 }
