@@ -344,6 +344,7 @@ section .text-container .text-box {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -449,6 +450,7 @@ section .text-container .text-box {
 .footer-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 10px;
+  width: 100%;
 }
