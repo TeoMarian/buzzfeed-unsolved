@@ -114,9 +114,15 @@ h2 {
   padding: 30px;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
 .navbar.navbar-light {
   border-bottom: 2px solid;
-  margin: 0px 10px;
 }
 
 .seasons-dropdown {
@@ -162,7 +168,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
   margin-top: 30px;
 }
 
@@ -441,4 +447,109 @@ section .text-container .text-box {
 
 .youtube-link:hover {
   color: red;
+}
+
+/* Home first section */
+.base-sections {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero-image {
+  height: 35vh;
+  position: absolute;
+  top: 20%;
+  left: 45%;
+}
+
+.hero-header { 
+  padding-right: 50%; 
+  position: relative ;
+  z-index: 2;
+}
+
+.red-text {
+  color: #EE301F;
+}
+
+.content-wrapper {
+  padding: 0 20rem;
+}
+
+.section-one {
+  background-color: #525252;
+}
+
+/* Home second section */
+.second-section {
+  display: flex;
+  width: 100%;
+}
+
+.images-wrapper {
+  align-items: center;
+  display: flex; 
+  justify-content: center; 
+  position: relative;
+  width: 100%; 
+}
+
+.image-wrapper {
+  align-items: end; 
+  display: flex; 
+  position: absolute;
+  width: 100%;
+}
+.img-wrapper {
+  height: 100%;
+}
+
+.section-three {
+ background-color: #343434;
+}
+
+.carousel-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-one, .section-two{
+  padding-bottom: 7rem;
+}
+
+.bordered {
+  position: relative;
+}
+
+.bordered:before {
+  content: '';
+  width: 94px;
+  height: 20px;
+  border-left: 3px solid #838383;
+  border-top: 3px solid #838383;
+  position: absolute;
+  top: -14px;
+  left: -14px
+}
+
+.name-bordered {
+  position: relative;
+}
+
+.name-bordered:before {
+  content: '';
+  width: 42px;
+  height: 24px;
+  border-left: 2px solid #EE301F;
+  border-top: 2px solid #EE301F;
+  position: absolute;
+  top: -6px;
+  left: -10px
 }

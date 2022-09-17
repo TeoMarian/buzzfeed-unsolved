@@ -29,7 +29,7 @@ function reveal() {
     }
 }
 
-window.addEventListener("scroll", reveal);
+window.addEventListener("load", reveal);
 
 //Shop slider
 let slideIndex = 1;
